@@ -1,0 +1,530 @@
+/* press-start-2p-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('../../assets/fonts/press-start-2p-v12-latin_cyrillic-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../assets/fonts/press-start-2p-v12-latin_cyrillic-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* nunito-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url('../../assets/fonts/nunito-v23-latin_cyrillic-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../assets/fonts/nunito-v23-latin_cyrillic-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  font-size: 26px;
+  color: #000;
+  font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+  min-width: 320px;
+  background: #fff;
+}
+
+.navbar-brand {
+  font-size: 14px;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  font-size: 17px;
+}
+
+.nav-item:hover {
+  background: #C42B2B;
+  transition: all 0.3s linear;
+}
+
+.nav-item:hover .nav-link {
+  color: white !important;
+  transition: all 0.3s linear;
+}
+
+.animRow {
+  transform: translateY(-150%);
+  animation: anim 1s forwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(-150%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animRow2 {
+  transform: translateY(-150%);
+  animation: anim 1s forwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX(150%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(/assets/image/bc_main.png) center/cover no-repeat;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.hero-title {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero-title span {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.hero-button {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border: none;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  background: transparent;
+  display: none;
+}
+
+.promo {
+  background: #C42B2B;
+  font-size: 18px;
+}
+
+.promo .container {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.info {
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 200px;
+  background: url(/assets/image/pig.png) bottom/350px no-repeat;
+}
+
+.info-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.info-title::before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url(/assets/icons/leader.png) center/contain no-repeat;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.info-block p {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.info-block p:last-child {
+  margin-bottom: 0;
+}
+
+#carouselMultiItemExample {
+  margin-top: 50px;
+}
+
+
+.container .card {
+  background-color: #4B3736;
+  color: #fff;
+  margin-top: 30px;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.container .card p {
+  font-size: 20px;
+}
+
+.container .card h5 {
+  font-size: 30px;
+}
+
+.modification {
+  padding-top: 135px;
+  background: url(/assets/icons/feature-support.jpg) 50% 15% no-repeat;
+}
+
+.mods-title {
+  text-align: center;
+}
+
+
+
+.top {
+  padding-top: 65px;
+  background: url(/assets/icons/feature-community.jpg) 50% 25% no-repeat;
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+
+.hr-line-wid {
+  margin: 20px 0;
+  padding: 0;
+  height: 0;
+  border: none;
+  border-top: 40px solid #C03131;
+}
+
+.players-title {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.carousel-slide {
+  margin-top: 70px;
+}
+
+.gallery {
+  padding: 150px;
+  background: url(/assets/icons/feature-gamepad.jpg) bottom center no-repeat;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#carouselBasicExample {
+  width: auto;
+}
+
+.reg-info {
+  margin-top: 150px;
+}
+
+.reg-info h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.butn {
+  margin-top: 30px;
+  font-size: 20px;
+  padding: 20px;
+
+}
+.butn a {
+ text-decoration: none;
+}
+
+.f-info {
+  margin-top: 70px;
+  font-size: 15px;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+
+.f-info p {
+  font-size: 20px;
+}
+
+.f-info .copy {
+  color: gray;
+  font-size: 13px;
+}
+
+.f-info-title {
+  background: #FFEFEF;
+}
+
+.f-info-title a {
+  margin-left: 20px;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.vk-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.ver {
+  font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 576px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .promo {
+    min-height: 210px;    
+    position: relative;
+  }
+
+  .promo .container {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    left:0;
+    margin: auto;
+  }
+
+  .info-block p {
+    font-size: 20px;
+  }
+
+  .f-info-title {
+    background: #FFEFEF;
+    position: relative;
+    font-size: 18px;
+  }
+
+  .f-info-title::after {
+    content: "";
+    display: block;
+    background: #C03131;
+    width: 100%;
+    height: 100%;
+    bottom: -10px;
+    left: -20px;
+    right: -10px;
+    position: absolute;
+    z-index: -1;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .promo {
+    font-size: 22px;
+    min-height: 245px;
+  }  
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-title span {
+    margin-top: 48px;
+    font-size: 31px;
+  }
+
+  .promo {
+    min-height: 200px;
+  }
+
+  .info {
+    background: url(/assets/image/pig.png) bottom right/400px no-repeat, url(/assets/image/cake.png) bottom left/450px no-repeat;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-link {
+    font-size: 12px;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  .hero-button {
+    display: block;
+  }
+
+  .promo {
+    min-height: 200px;
+  }
+  
+  .info {
+    padding-bottom: 270px;
+  }
+
+  .info-block {
+    background: #FFEFEF;
+    padding: 40px;
+    position: relative;
+  }
+
+  .info-block::after {
+    content: "";
+    display: block;
+    background: #C03131;
+    width: 100%;
+    height: 100%;
+    bottom: -20px;
+    left: -20px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .modification {
+    padding: 74px;
+  }
+
+  .mods-title {
+    position: relative;
+    background: #FFEFEF;
+    padding: 40px;
+    margin-top: 100px;
+  }
+
+  .mods-title::after {
+    content: "";
+    display: block;
+    background: #C03131;
+    width: 100%;
+    height: 100%;
+    bottom: -20px;
+    right: -20px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .top {
+    padding-top: 103px;
+    background: url(/assets/icons/feature-community.jpg) 50% 25% no-repeat;
+  }
+
+  .players-title {
+    position: relative;
+    background: #FFEFEF;
+    padding: 30px;
+    margin-top: 150px;
+  }
+
+  .players-title::after {
+    content: "";
+    display: block;
+    background: #C03131;
+    width: 100%;
+    height: 100%;
+    bottom: -15px;
+    right: -15px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .gallery {
+    padding-top: 47px;
+    background: url(/assets/icons/feature-gamepad.jpg) bottom center no-repeat;
+    margin-bottom: 150px;
+  }
+
+  .gallery-title {
+    position: relative;
+    background: #FFEFEF;
+    padding: 30px;
+    margin-top: 150px;
+  }
+
+  .gallery-title::after {
+    content: "";
+    display: block;
+    background: #C03131;
+    width: 100%;
+    height: 100%;
+    bottom: -15px;
+    left: -15px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .footer-info {
+    background: #C03131;
+    height: 280px;
+  }
+
+  .footer-info p {
+    font-size: 20px;
+  }
+
+  .f-info-title p {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-title span {
+    font-size: 40px;
+    margin-top: 55px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .info-block p {
+    font-size: 27px;
+  }
+
+  .reg-info h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
